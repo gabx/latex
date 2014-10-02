@@ -1,0 +1,374 @@
+\documentclass[14pt,a4paper]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{colortbl} % color tables
+\usepackage{pifont}
+\usepackage{xmpmulti}
+\usepackage{libertine}
+\usepackage{eurosym}
+\usepackage{natbib}
+
+
+
+\definecolor{grey}{RGB}{184,184,184}
+\definecolor{title}{RGB}{94,99,142}
+\definecolor{greylight}{RGB}{208,208,208}
+\definecolor{tex}{RGB}{110,11,20}
+
+\setbeamercolor{normal text}{bg=grey,fg=tex}
+\setbeamertemplate{navigation symbols}{} %no nav symbols
+\setbeamertemplate {items}[circle] %change bullet in circle
+\setbeamercolor{itemize item}{fg=title} %color bullet in itemize
+\setbeamertemplate{footline}[frame number]
+\setbeamerfont{footline}{size=\fontsize{9}{11}\selectfont}
+
+
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+%%%%%%%%%%%%%Center All Frametitle%%%%%%%%%%%%%%%%%
+\makeatletter
+\long\def\beamer@@frametitle[#1]#2{%
+  \beamer@ifempty{#2}{}{%
+    \gdef\insertframetitle{\centering{#2\ifnum\beamer@autobreakcount>0\relax{}\space\usebeamertemplate*{frametitle continuation}\fi}}%
+  \gdef\beamer@frametitle{#2}%
+  \gdef\beamer@shortframetitle{#1}%
+}%
+}
+\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%All slides background
+%\usebackgroundtemplate{%
+%  \vbox to \paperheight{\vfil\hbox to \paperwidth{\hfil\includegraphics[width=90mm]{cible_2.png}\hfil}\vfil}
+%}
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+
+%%%%%%%%%%NEW SLIDE%%%%%%%%%    1
+\begin{frame}
+
+
+
+
+\end{frame}
+
+
+%%%%%%%%%NEW SLIDE%%%%%%%%%%%%%   2
+\begin{frame}
+
+
+\includegraphics[scale=0.7]{kerviel.png}
+
+\emph{Jérome Kerviel: \euro~5 Milliards de pertes pour la Société Générale}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%NEW SLIDE%%%%%%%%%%%   3
+
+\begin{frame}
+\begin{center}
+
+
+\multiinclude [start=1,format=png,graphics={scale=0.35}]{raderbis}
+
+\end{center}
+\end{frame}
+
+%%%%%%%%%%%%%%%%NEW SLIDE%%%%%%%%%   4
+\begingroup
+\setbeamercolor{background canvas}{bg=greylight}
+\begin{frame}
+\begin{center}
+
+%\emph{En ligne le 1er Mars 2013}
+%\includegraphics[width=\linewidth,height=\textheight,keepaspectratio]{web3.png}
+
+\HRule \\[0.4cm]
+{\huge \bfseries \color{title}TradingHall.com}\\
+\HRule \\[0.4cm]
+
+
+\emph{"An Open-knowledge Exchange Platform"}\\[1cm]
+
+%\vspace{-4mm}
+
+
+
+%\vspace{8mm}
+\includegraphics[scale=0.2]{testlogo1.png}
+
+\vfill
+
+
+\end{center}
+\end{frame}
+\endgroup
+%%%%%%%%%%%%%%NEW SLIDE%%%%%%%%%%%%   5
+
+
+\begin{frame}
+
+\vspace{5mm}
+\frametitle{\color{title}\bf\textsc{3 prestations}}
+\vspace{-3mm}
+
+
+
+
+
+% \color{tex}{\bf\small 3 PRESTATIONS}\\
+ 
+ \pause
+ 
+\vspace{-4mm}
+\begin{center}
+\footnotesize COMMUNICATIONS SÉCURISÉES~100 CHF\ding{52}\\
+\end{center}
+\vspace{-3mm}
+\parbox[c]{2cm}{\includegraphics[width=2cm]{pilone.png}}\ding{43}\parbox[c]{2cm} {\includegraphics[width=2.5cm]{list.png} \includegraphics[width=3cm]{forum.png}~ \includegraphics[width=2.5cm,height=2cm]{irc1.png}}\\
+
+\pause
+
+
+\begin{center}
+\footnotesize ANALYSE TECHNIQUE~250-500 CHF \ding{52}\\
+\end{center}
+\vspace{-5mm}
+\parbox[c]{2cm}{\includegraphics[width=2cm,height=2.5cm]{analysis.png}} \ding{43} \parbox[c]{2cm}{\includegraphics[width=3cm,height=2cm]{chart.png}%
+\includegraphics[width=2.2cm]{mail.png} \includegraphics[width=2.5cm]{twitt.png}}\\
+
+\pause
+
+\begin{center}
+\footnotesize GESTION DES RISQUES~1'500-3'000 CHF \ding{52}\\
+\end{center}
+\vspace{-4mm}
+\parbox[c]{2cm}{\includegraphics[width=2cm]{danger.png}} \ding{43}~~~\parbox[c]{2cm}{\includegraphics[width=2.5cm]{excel.png}}
+
+
+
+\end{frame}
+
+%%%%%%%%%NEW SLIDE%%%%%%%%%%%   6
+
+
+{
+\usebackgroundtemplate{%
+  \vbox to \paperheight{\vfil\hbox to \paperwidth{\hfil\includegraphics[scale=0.45]
+  {bck4.png}\hfil}\vfil}}
+  
+\begin{frame}
+\begin{center}
+\frametitle{\color{title}\bf\textsc{Clientèle Ciblée}}
+\vspace{-6mm}
+
+\large Internautes à la recherche d'un commentaire technique sur les marchés \\
+\pause
+
+\vspace{5mm}
+
+\fbox{\parbox{70mm}{
+\centering \small Login~~~~~~~~: johndoe@tradinghall.com\\
+\hspace{-25mm}\small Password : \ding{108}\ding{108}\ding{108}\ding{108}\ding{108}\ding{108}\\}}
+\pause
+
+\vspace{5mm}
+\normalsize Traders et gérants désireux de \\confronter leur opinion\\
+\pause
+
+\vspace{6mm}
+\small Traders  appuyant leur décision \\ sur une analyse technique\\
+\pause
+
+
+\vspace{6mm}
+
+\footnotesize Établissements financiers \\  demandeurs de logiciels\\ de suivi des risques
+\end{center}
+\end{frame}
+}
+
+%%%%%%%%%NEW SLIDE%%%%%%%%%%%   7
+
+\begin{frame}
+
+\frametitle{\color{title}\bf\textsc{Stratégie}}
+
+
+ \color{tex}{\bf\small DISTRIBUTION}\\
+ 
+ \vspace{-5mm}
+ \begin{center}
+\footnotesize Exclusivement par internet \\
+\includegraphics[width=5cm,height=1.5cm]{internet.png}
+\end{center}
+
+\pause
+\vspace{-3mm}
+\color{tex}{\bf\small COMMUNICATION}\\
+
+
+\begin{itemize}
+
+
+\item La partie publique  du site est sa vitrine 
+\item La qualité  des produits au service du site
+\item La fonction réseau social élargit la clientèle
+\item Référencements sur d'autres sites financiers
+\item Marketing viral au sein de la communauté 
+
+
+\end{itemize}
+
+\pause
+
+\color{tex}{\bf\small FIDÉLISATION}\\
+\begin{itemize}
+\item Aucune remise, mais des prestations supplémentaires offertes
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%NEW SLIDE%%%%%%%%%%%%%%   8
+
+\begin{frame}
+\frametitle{\color{title}\bf\textsc{valeur ajoutée}}
+
+\ding{227} Il n'existe {\bf AUCUN} site qui propose un tel ensemble de moyens de communication interactifs, modernes et sécurisés\\
+\pause
+
+\ding{227} Il n'existe {\bf{AUCUN}} site qui réunit autant de services\\
+\pause
+
+\ding{227} De bonnes anticipations de marché avec une analyse technique précise, synthétique, compréhensible et réputée\\
+\pause
+
+\ding{227} Sécurisation, interactivité et  confidentialité  des communications\\
+\pause
+
+\ding{227} Alertes Twitt
+
+\end{frame}
+
+%%%%%%%%%%%%%%%NEW SLIDE%%%%%%%%%%%   9
+
+\begin{frame}
+\frametitle{\color{title}\bf\textsc{chiffres clés}}
+\framesubtitle{\color{tex}\bf\footnotesize{BILAN}}
+
+
+
+
+\resizebox{\textwidth}{!}{%
+
+\begin{tabular}{lcccc}
+
+&  {\bf Ouverture} &  {\bf Année 1} & {\bf Année 2}& {\bf Année 3} \\ 
+& Mai 2012 & (7 mois) & & \\ \hline 
+{\bf Privé/Capital} & 12'000 & 20'185 & 61'938 & 109'002 \\ \hline  
+{\bf Résultat Reporté} & 0 & 4'801 & 40'208 & 78'657 \\ \hline  
+{\bf Emprunts moyen \& long terme} & 0 & 0 & 0 & 0 \\ \hline   
+{\bf Liquidités} & 9'800 & 18'201 & 60'324 & 107'759 \\ \hline  
+{\bf Total Actif Immobilisé} & 2'052 & 1'836 & 1'465 & 1'095 \\ \hline  
+\end{tabular}
+}
+
+\vspace{10mm}
+\begin{center}
+Raison sociale: RI
+\end{center}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%NEW SLIDE%%%%%%%%%%%   10
+
+\begin{frame}
+\frametitle{\color{title}\bf\textsc{chiffres clés}}
+\framesubtitle{\color{tex}\bf\footnotesize{CHIFFRE D'AFFAIRE ET POINT MORT}}
+
+
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccc}
+
+& {\bf Mai 2013} & & \\
+& {\bf Déc 2013} & {\bf 2014} & {\bf 2015} \\ \hline   
+{\bf Quantité/mois }& 26 & 82 & 125 \\ \hline   
+{\bf Panier Moyen} & 183 & 186 & 192 \\ \hline  
+{\bf CA Mensuel Moyen} & 4'762 & 15'297 & 24'051 \\ \hline  
+{\bf CA Moyen au Point Mort} & 3'752 & 11'270 & 20'036 \\ \hline  
+{\bf Quantité au point Mort} & 20 & 60 & 104 \\ \hline  
+\end{tabular}
+}
+
+\end{frame}
+%%%%%%%%%%%%%%%NEW SLIDE%%%%%%%%%%%%   11
+
+\begin{frame}
+\frametitle{\color{title}\bf\textsc{chiffres clés}}
+\framesubtitle{\color{tex}\bf\footnotesize{COMPTE D'EXPLOITATION}}
+
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccc}
+
+& {\bf ANNÉE 1} & {\bf ANNÉE 2}& {\bf ANNÉE 3} \\   
+& 7 mois & 12 mois & 12 mois \\ \hline 
+{\bf Chiffre d'affaires HT} & 33'333 & 183'565 & 288'611 \\ \hline   
+{\bf Charges Variables/Directes} & 9\% & 8\% & 7\% \\ \hline   
+{\bf Salaires/CA} & 71\% & 67\% & 75\% \\ \hline  
+{\bf Resultat Net} & 4'801 & 35'407 & 38'450\\ \hline   
+{\bf Resultat Net/CA} & 14\% & 19\% & 13\% \\ \hline 
+{\bf Cash-Flow Autofinancement} & 5'017 & 35'777 & 38'820 \\ \hline  
+\end{tabular}
+}
+
+\end{frame}
+
+%%%%%%%%%%%%NEW SLIDE%%%%%%%%%%%   12
+
+\begin{frame}
+\frametitle{\color{title}\bf\textsc{atouts}}
+
+\ding{59} 25 années d'expérience comme trader: bonne connaissance du milieu, des pratiques et des besoins\\
+\pause
+
+\ding{59} Bon réseau et solide réputation
+\pause
+
+\ding{59} Longue pratique des communautés open-source et de leur moyens d'échange efficaces
+\pause
+
+\ding{59} Couts fixes et variables très faibles permettant une croissance exponentielle du bénéfice
+\pause
+
+\ding{59} Immobilisations très faibles 
+\pause
+
+\ding{59} Automatisation de nombreuses tâches 
+
+\end{frame}
+
+%%%%%%%%%%NEW SLIDE%%%%%%%%%%%%%13
+\begin{frame}
+\begin{center}
+\frametitle{\color{title}{GORDON...GO TRADINGHALL.COM !}}
+
+
+\includegraphics[scale=0.5]{gekko3.png}
+
+\emph{"The most valuable commodity I know of is information"}\\
+\small <Gordon Gecko, Wall Street, 1987>
+
+\end{center}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
