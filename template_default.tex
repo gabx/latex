@@ -1,0 +1,169 @@
+%%%% BASIC PACKAGES %%%%
+\documentclass[fontsize=12pts,BCOR=8.25mm]{scrartcl} %use KOMA-script 
+\KOMAoptions{DIV=10} % the larger this number,the larger the text block and the smallest the margins 
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc} % most common format with pdfLaTex
+%\usepackage{lmodern} % font familly
+\usepackage{xcolor} % more convenient than color package
+\usepackage{graphicx}
+\usepackage{lipsum} % output dummy text
+% check if using xelatex rather than pdflatex
+
+
+
+%%%% ADD-ON PACKAGES %%%%
+\usepackage{hyperref} %manage hyperlinks
+\usepackage{pifont} % special characters
+\usepackage{enumitem} % define custom lists
+\usepackage{titlesec} % flexibility in definition lists
+\usepackage{listings} % write code in nice layout
+\lstloadlanguages{Java} % load Java listings package
+
+%%%% LANGUAGE %%%%
+\usepackage[english=nohyphenation,french=nohyphenation]{hyphsubst} %avoid hyphenation. Need the babel package
+\usepackage[french,english]{babel}
+
+%%%% COLORS %%%%
+% http://html-color-codes.info/ for color
+%colors%
+\definecolor{myblack}{HTML}{161616}
+\definecolor{myred}{HTML}{831818}
+\definecolor{myblue}{HTML}{31495B}
+\definecolor{mygreen}{HTML}{00FF00}
+\definecolor{myblack}{HTML}{161616}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.3}
+%%%% SHORTCUTS %%%%
+\def \pi1 {\ding{79}}
+\def \pi2 {\ding{112}}
+\def \pi3 {\ding{227}}
+\def \empty {}
+
+%%%% CUTOM COMMANDS %%%%
+% best practice is to use the \def and \let primitive commands %
+% \def 
+% \def\foo<#1>{\command{#1}}
+% \def\foobar#1#{\framebox[#1]}
+
+% \let command
+% allows you to copy content of a command into a new command
+% \let\newcommandfoo\foo
+% with renewcommand
+%\renewcommand{\foo}{\bar\newcommandfoo}
+\renewcommand*\rmdefault{cmdh}
+\newcommand{\co}[1]{\texttt{\colorbox{mylightgrey}{#1}}} % highlight in a box (useful for short code)
+
+
+
+
+%%%% GENERAL PRESENTATION %%%%
+\linespread{1.1}
+\usepackage[    % Improves general appearance
+activate = true, % protrusion
+expansion = true,
+tracking = true,
+kerning = true,
+spacing = true,
+letterspace = 50, % well spaced smallcaps % avoid blur 
+shrink = 10,
+stretch = 10]{microtype}     
+  
+  
+
+
+%%%%%% SIMPLE TITLE %%%%%%%%%%%
+%\definecolor{mymagenta}{HTML}{5B0E6A}
+%\def \@maketitle{
+%\par\huge \bfseries \color{mymagenta}{\@title}
+%\par{\@author }
+%\par}
+%% \title{\huge{.}} % name of your title
+%% \date{} % enter \today if you want date
+
+
+\title{Howto obtain very highly condensed texts}
+\author{Peter Grumpy}
+\date{}
+%%%%% CUSTOMIZATION %%%%%%%%
+
+% hyperlinks %
+\hypersetup{
+  colorlinks = true,   
+  citecolor = myblue, % link to bibliography
+  urlcolor = mymagenta, % external links
+  linkcolor = mygreen  % internal links
+}
+
+%% more compact item list %%
+\newlength{\wideitemsep}
+\setlength{\wideitemsep}{.4\itemsep}
+\addtolength{\wideitemsep}{-5pt}
+\let\olditem\item
+\renewcommand{\item}{\setlength{\itemsep}{\wideitemsep}\olditem}
+
+
+
+
+
+ 
+%%%%%%%%%%%%%%%%%%DOCUMENT%%%%%%%%%%%%%%%%%%%%%  
+\begin{document}
+\pagestyle{empty}
+\maketitle
+\clearpage
+%%%%% Title page %%%%
+% \maketitle
+%\titlepage
+%%\vfill
+%
+%\begin{description}
+%\item [Statut:] Draft
+%\item [Version:] 0.5
+%\item [Auteur:] Arnaud Gaboury
+%\end{description}
+% 
+%% \clearpage
+
+\lipsum[1-5]
+%%%%% Table of contents %%%%
+%%%%% remove it if not needed %%%%
+%\tableofcontents
+%
+%\clearpage
+%%%%% new page %%%%
+%
+%\section*{One}
+%\subsection*{one}
+%
+%
+%
+%\begin{itemize} 
+%
+%\item blabla1
+%\item blabla2
+%\item blabla3
+%
+%\end{itemize}
+%
+%
+%\begin{enumerate}
+%
+%
+%\item blabla1
+%\item blabla2
+%\item blabla3
+%
+%\end{enumerate}
+%
+%
+%\subsection*{two}
+%\section*{Two}
+
+
+
+
+
+
+
+\end{document}
+%%%%%%%%%%%%%%%%%%%END DOCUMENT%%%%%%%%%%%%%%%%%%%%
