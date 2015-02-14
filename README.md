@@ -1,6 +1,10 @@
-latex
-=====
+# LATEX
 
 My latex stuff
 
-![cv screenshot](cv.png)
+
+## CV screenshot
+![Alt text](cv.png)
+
+
+
