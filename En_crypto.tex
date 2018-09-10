@@ -1,0 +1,145 @@
+\documentclass[11pt,a4paper]{moderncv}
+\moderncvstyle{banking}
+\moderncvcolor{blue}
+\pagestyle{empty}  %no header,footer and numer
+\linespread{1} %hspacing 1.3 x default
+
+
+\frenchspacing %Do not put space after end of phrase
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage[T1]{fontenc}
+\usepackage{inconsolata}
+\usepackage[left=1.3cm,right=1.3cm,top=1.5cm,bottom=1.5cm]{geometry} %define margins
+\usepackage[english]{babel} %text corrector
+\usepackage{fancybox}
+\usepackage{shadow} %custom type of box
+\usepackage{pifont}  %special symbols
+\usepackage{eurosym}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{multicol} %Usage: \begin{multicols}{2}
+\definecolor{url}{RGB}{51,69,156}
+\definecolor{url1}{HTML}{9B5DD2}
+\definecolor{myblue}{HTML}{31495B}
+\moderncvicons{awesome} % New icons fontawesome
+
+%peronnal data
+\firstname{\Large Arnaud}
+\familyname{Gaboury}
+\address{Rue de la Dôle, 12}{1203 Geneva}
+\mobile{ +41~(XX)~XXX~XX~XX}
+\email{arnaud.gaboury@XXXX.YY}
+
+\AtBeginDocument{\hypersetup{colorlinks, urlcolor=url1}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\color{myblue}
+\makecvtitle
+\begin{center}
+\vspace{-1.5cm}
+\textls[200]{3 children \ding{113} Swiss resident C permit  \ding{113} \href{http://www.linkedin.com/in/agaboury}{\faLinkedinSquare} \href{https://github.com/gabx}{\faGitSquare} \href{https://twitter.com/TheTradingHall}{\faTwitterSquare}}
+\end{center}
+
+%%%%%%% ACTUAL POSITION %%%%%%
+\section{Actual position}
+\cventry{}{Cryptocurrency trading ecosystem}{TheTradingHall}{Project manager}{}{}
+
+
+
+\begin{multicols}{2}
+\begin{itemize} 
+  {
+     \item[\faCaretRight] reputation based online community
+     \item[\faCaretRight] trading \& risk management tools
+     \item[\faCaretRight] market technical analysis
+     \item[\faCaretRight] collective intelligence fund management
+   }
+\end{itemize} 
+\end{multicols}
+
+%%%%%%% EXPERIENCE %%%%%%%%%%%%%
+\section{Experience}
+
+\cventry{2016-2018}{Blockchain startups}{\href{https://www.matchpool.com/}{Matchpool} -  \href{https://aventus.io/}{Aventus} - \href{https://bitcoinexchangeguide.com/global-mining-token-gmt-ico/}{Global Mining Token}}{ICO Media manager}{}{Online articles, Social media posts, 2,000 member community platform management}
+
+\cventry{August 2008-May 2012}{Discretionary and systematic Hedge Funds}{JET SA, LSC, A2CT2,LSC - Geneva}{Trader}{}{Trading, system data feed and maintenance, market orders computing, risk monitoring, marketing material}
+
+\cventry{January 2002-August 2008}{Trading with my own funds}{Xernon Trading - Aix-en-Provence}{Trader}{}{Very active and highly leveraged trading on 15 futures market\\
+\textbf{\texttt{150\% yearly rate of return - Risk management tool coded in R }}
+}
+
+\cventry{March 1995-May 2001}{Proprietary trading}{Bank Worms - Paris}{Trader}{}{Discretionary trading on futures markets for the bank own funds\\ \textbf{\texttt{Formally rewarded by the bank board for exceptional trading results}}
+}
+
+\cventry{March 1988-December 1994}{Merchant house}{IFF - Paris}{Broker}{}{Floor broking, dealing room, daily strategy recommendations\\
+\textbf{\texttt{Strong clientele development through accurate market analyses}}
+}
+  
+%%%%%%% COMPUTER SKILLS %%%%%%%%
+\section{Computer skills}
+\cventry{}{Distributions: Archlinux \& Red Hat family, Fedora Atomic}{\faLinux ~ Linux engineer}{}{}{}
+
+\begin{multicols}{2}
+\begin{itemize} 
+  {
+     \item[\faCaretRight]  web server administration 
+     \item[\faCaretRight]  Kubernetes \& micro-services
+     \item[\faCaretRight]  Systemd services
+     \item[\faCaretRight]  PostgreSQL data base
+	 \item[\faCaretRight]  HTML \& CSS
+   }
+\end{itemize}
+\end{multicols}
+
+\cventry{}{}{\faCode ~ Developer}{}{}{}
+\vspace{-\baselineskip}
+\begin{multicols}{2}
+\begin{itemize}
+
+  {
+     \item[\faTerminal]  Java: Oracle certified developer
+     \item[\faTerminal]  R: Big data scientist certifications
+     \item[\faTerminal]  shell script
+     \item[\faTerminal]  Excel BVA         
+     \item[\faTerminal]  text processing with \LaTeX
+     }
+\end{itemize}
+\end{multicols}
+
+%%%%%%% SOFT SKILLS %%%%%%%%
+\section{Soft skills}
+
+\begin{itemize} 
+  {
+     \item[\faCheckCircle] very effective stress management
+     \item[\faCheckCircle] organizational and communication ability, good capacity to join and manage a team
+     \item[\faCheckCircle] self-reliance with a facility to quickly decide in the respect of the line management
+     \item[\faCheckCircle] high level of working capacity, flexibility and synthesizing
+     \item[\faCheckCircle] psychologist and emphatic
+     \item[\faCheckCircle] active in open-source communities \& social networks 
+   }
+\end{itemize}
+ 
+%%%%% Diplomes %%%%%%
+\section{Education}
+\vspace{-0.5 cm}  
+\cventry{2014}{Data Science}{}{}{\textnormal{\href{https://www.coursera.org/specialization/jhudatascience/1?utm_medium=dashboard}{John Hopkins University mooc}}}{}
+\vspace{-0.5cm}
+\cventry{2013}{Oracle certified Java and JEE developer}{}{}{\textnormal{Geneva}}{}
+\vspace{-0.5cm}
+\cventry{1987}{Master in Business - \textnormal{Dauphine-Paris IX}}{}{}{\textnormal{Paris}}{}
+ \vspace{-0.5cm}
+\cventry{1982}{Baccalauréat scientifique - \textnormal{Lycée privé St François-Xavier}}{}{}{\textnormal{Vannes}}{}
+
+%%%%%% Langue %%%%%%%
+\section{Language}
+\begin{multicols}{2}
+\cvitemwithcomment{French}{mother tongue}{}
+\cvitemwithcomment{English}{fluent}{}
+\end{multicols}
+
+
+\end{document}
